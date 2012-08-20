@@ -6,6 +6,6 @@ before_script:
   - rm rhino1_7R4.zip
   - rm -rf rhino1_7R4
   - bundle install --path ~/builds/joeyates/jasmine-rhino-reporters/vendor/bundle
-  - ls ~/builds/joeyates/jasmine-rhino-reporters/vendor/bundle/gems
+  - ls ~/builds/joeyates/jasmine-rhino-reporters/vendor
 script: cd ~/builds/joeyates/jasmine-rhino-reporters && java -jar ~/js.jar -require -f spec/runner.js
 
