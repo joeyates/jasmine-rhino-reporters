@@ -1,11 +1,11 @@
 language: java
 before_script:
   - curl -L -O https://github.com/downloads/mozilla/rhino/rhino1_7R4.zip
-  - unzip rhino1_7R4.zip
+  - unzip rhino1_7R4.zip > /dev/null
   - mv rhino1_7R4/js.jar ~/
   - rm rhino1_7R4.zip
   - rm -rf rhino1_7R4
   - cd ~/builds/joeyates/jasmine-rhino-reporters && bundle install --path /home/vagrant/builds/joeyates/jasmine-rhino-reporters/vendor/bundle
-  - ls /home/vagrant/builds/joeyates/jasmine-rhino-reporters/vendor
+  - ls /home/vagrant/builds/joeyates/jasmine-rhino-reporters/vendor/bundle
 script: cd ~/builds/joeyates/jasmine-rhino-reporters && java -jar ~/js.jar -require -f spec/runner.js
 
