@@ -6,6 +6,6 @@ before_script:
   - rm rhino1_7R4.zip
   - rm -rf rhino1_7R4
   - cd ~/builds/joeyates/jasmine-rhino-reporters && bundle install --path /home/vagrant/builds/joeyates/jasmine-rhino-reporters/vendor/bundle
-  - ls /home/vagrant/builds/joeyates/jasmine-rhino-reporters/vendor/bundle
+  - find /home/vagrant -name '*jasmine*'
 script: cd ~/builds/joeyates/jasmine-rhino-reporters && java -jar ~/js.jar -require -f spec/runner.js
 
