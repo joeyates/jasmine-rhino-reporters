@@ -1,0 +1,9 @@
+language: java
+before_script:
+  - curl -L -O https://github.com/downloads/mozilla/rhino/rhino1_7R4.zip
+  - unzip rhino1_7R4.zip
+  - mv rhino1_7R4/js.jar .
+  - rm rhino1_7R4.zip
+  - rm -rf rhino1_7R4
+script: java -jar js.jar -require -f spec/runner.js
+
