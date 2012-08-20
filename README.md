@@ -10,8 +10,8 @@ standard out interface.
   * [Source Code]
   * [Continuous Integration]
 
-[Source Code]: https://github.com/joeyates/metar-parser "Source code at GitHub"
-[Continuous Integration]: http://travis-ci.org/joeyates/metar-parser "Build status by Travis-CI"
+[Source Code]: https://github.com/joeyates/jasmine-rhino-reporters "Source code at GitHub"
+[Continuous Integration]: http://travis-ci.org/joeyates/jasmine-rhino-reporters "Build status by Travis-CI"
 
 Dependencies
 ============
