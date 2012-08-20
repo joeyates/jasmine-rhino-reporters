@@ -5,6 +5,6 @@ before_script:
   - mv rhino1_7R4/js.jar .
   - rm rhino1_7R4.zip
   - rm -rf rhino1_7R4
-  - bundle
+  - bundle install --path ./vendor/bundle
 script: java -jar js.jar -require -f spec/runner.js
 
