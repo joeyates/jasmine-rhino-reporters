@@ -1,5 +1,9 @@
 load("lib/jasmine.rhino.timer_patch.js");
-load("vendor/bundle/gems/jasmine-core-1.2.0/lib/jasmine-core/jasmine.js");
+try {
+  load("vendor/bundle/gems/jasmine-core-1.2.0/lib/jasmine-core/jasmine.js");
+} catch(e) {
+  load("vendor/bundle/ruby/1.9.1/gems/jasmine-core-1.2.0/lib/jasmine-core/jasmine.js");
+}
 load("lib/jasmine.rhino.progress_reporter.js");
 load("spec/progress_reporter_spec.js")
 jasmine.getEnv().execute();
