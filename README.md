@@ -1,4 +1,4 @@
-Jasmine Rhino Reporters  [![Build Status](https://secure.travis-ci.org/joeyates/jasmine-rhino-reporters)][Continuous Integration]
+Jasmine Rhino Reporters  [![Build Status](https://secure.travis-ci.org/joeyates/jasmine-rhino-reporters.png)][Continuous Integration]
 =======================
 
 Reporters for the Jasmine testing framework for use
